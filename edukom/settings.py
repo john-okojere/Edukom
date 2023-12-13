@@ -125,7 +125,7 @@ CRISPY_TEMPLATE_PACK = "bootstrap5"
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_ROOT = os.path.join(BASE_DIR, "homepage\static")
+STATIC_ROOT = os.path.join(BASE_DIR, "homepage/static")
 MEDIA_URL = '/media/'
 MEDIA_ROOT = 'media'
 STATIC_URL = 'Assets/'
