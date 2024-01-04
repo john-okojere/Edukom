@@ -32,7 +32,7 @@ function next() {
   }
 }
 next()
-setInterval(next, 5000);
+setInterval(next, 12000);
 
 
 function faq(key) {

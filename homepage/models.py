@@ -25,11 +25,14 @@ lesson_choices = (
 )
 
 goals = (
-    ('improve phonics, reading and writing', 'improve phonics, reading and writing'),
+    ('Improve phonics, reading and writing', 'improve phonics, reading and writing'),
     ('Help with assignments and school work', 'Help with assignments and school work'),
     ('Bulid foundation and confidence','Bulid foundation and confidence'),
     ('Home schooling','Home schooling'),
     ('Special needs support','Special needs support'),
+    ('Closing knowledge gaps','Closing knowledge gaps'),
+    ('Working ahead on the curriculum','Working ahead on the curriculum'),
+    ('Exam preparation','Exam preparation'),
 )
 Curriculums = (
     ('Nigerian', 'Nigerian'),

@@ -22,7 +22,7 @@
                 {{ Abform | crispy }}
             </div>
             <div class="submit">
-                <a  class="submit_btn" onclick="next(1)"> Next </a>
+                <a  class="submit_btn" onclick="fnext(1)"> Next </a>
             </div>
         </div>
         <div id="form2">
@@ -34,7 +34,7 @@
                 {{ Guform | crispy }}
             </div>
             <div class="submit">
-                <a class="submit_btn"  onclick="next(2)"> Next </a>
+                <a class="submit_btn"  onclick="fnext(2)"> Next </a>
             </div>
         </div>
         <div id="form3">
@@ -46,7 +46,7 @@
                 {{ Loform | crispy }}
             </div>
             <div class="submit">
-                <a class="submit_btn"  onclick="next(3)"> Next </a>
+                <a class="submit_btn"  onclick="fnext(3)"> Next </a>
             </div>
         </div>
         <div id="form4">
@@ -95,7 +95,7 @@
             }
         }
     }
-    function next(key){
+    function fnext(key){
         uo = key+1
         openform(uo)
     }
