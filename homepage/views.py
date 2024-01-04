@@ -22,7 +22,7 @@ def contact(request):
             data = form.save()
             subject = f'Message from {data.name}'
             html_message = render_to_string('emails/contact.html', {'data': data})
-            from_email = settings.EMAIL_HOST_USER
+            from_email = 'info@edukom.ng'
             recipient_list = [settings.EMAIL_HOST_USER]
             message = EmailMessage(subject, html_message, from_email, recipient_list)
             message.content_subtype = 'html'
@@ -42,7 +42,7 @@ def succes_form(request, uid):
     guardian.full_name = f"{guardian.last_name} {guardian.first_name}"
     subject = 'Welcome to Edukom'
     html_message = render_to_string('emails/gaurdian_sucess.html', {'guardian': guardian})
-    from_email = settings.EMAIL_HOST_USER
+    from_email = 'info@edukom.ng'
     recipient_list = [guardian.email]
     message = EmailMessage(subject, html_message, from_email, recipient_list)
     message.content_subtype = 'html'
