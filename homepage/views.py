@@ -23,7 +23,7 @@ def contact(request):
             subject = f'Message from {data.name}'
             html_message = render_to_string('emails/contact.html', {'data': data})
             from_email = settings.EMAIL_HOST_USER
-            recipient_list = ['info@edukom.ng']
+            recipient_list = ['john@edukom.ng']
             message = EmailMessage(subject, html_message, from_email, recipient_list)
             message.content_subtype = 'html'
             message.send()
@@ -49,7 +49,7 @@ def succes_form(request, uid):
 
     admin_html_message = render_to_string('emails/guardiantoadmin.html', {'guardian': guardian})
     admin_from_email = settings.EMAIL_HOST_USER
-    admin_recipient_list = ['info@edukom.ng']
+    admin_recipient_list = ['john@edukom.ng']
     admin_message = EmailMessage(subject, admin_html_message, admin_from_email, admin_recipient_list)
     admin_message.content_subtype = 'html'
     
