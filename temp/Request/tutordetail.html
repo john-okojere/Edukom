@@ -4,11 +4,18 @@
 <!DOCTYPE html>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <div class="container mt-5">
-    <div class="mb-4 d-flex g-5 align-bottom align-items-center" style="gap: 10px;" >
-        <h2 >Tutor's Detail</h2>
-        <a href="/">go to homepage</a>
-
+    <div class="content">
+        <p>Hello Admin,</p>
+        <p>A new guardian has just signed up for tutorship for their ward. Below are the details:</p>
+        <ul>
+            <li><strong>Name:</strong> {{ guardian.first_name }} {{ guardian.last_name }}</li>
+            <li><strong>Email:</strong> {{ guardian.email }}</li>
+            <li><strong>Phone:</strong> {{ guardian.phone }}</li>
+            <li><strong>Preferred Lesson Type:</strong> {{ guardian.lesson_type }}</li>
+        </ul>
+        <p>Please take the necessary steps to review the information and contact the guardian if required. Thank you!</p>
     </div>
+   
     <div class="card">
         <div class="card-body">
 
