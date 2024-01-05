@@ -7,5 +7,7 @@ urlpatterns = [
     path('contact/', views.contact, name="contact"),
     path('Get_a_tutor', views.get_a_tutor, name="GetATutor"),
     path('FAQs', views.faq, name="faq"),
+    path('guardians/', views.ViewGuardians, name="guardians"),
+    path('guardian/<uuid:uid>', views.ViewGuardian, name="guardian"),
     path('succes_form/<uuid:uid>/', views.succes_form, name="succes_form"),
     ]

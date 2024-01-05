@@ -6,6 +6,7 @@ from django.template.loader import render_to_string
 from django.utils.html import strip_tags
 from edukom import settings
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 
 
 def homepage(request):
@@ -96,3 +97,18 @@ def get_a_tutor(request):
         'Leform':Leform,  
     }
     return render(request, 'Forms/GetATutor.html', form_context)
+
+@login_required
+def ViewGuardians(request):
+    guardian = models.Guardian.objects.all().order_by('-date_joined')
+    for g in guardian:
+        g.full_name = f"{g.last_name} {g.first_name}"
+
+    return render(request, 'gaurdians.html', {'guardian':guardian})
+
+
+@login_required
+def ViewGuardian(request, uid):
+    guardian = models.Guardian.objects.get(uid=uid)
+    guardian.full_name = f"{guardian.last_name} {guardian.first_name}"
+    return render(request, 'gaurdian.html', {'guardian':guardian})

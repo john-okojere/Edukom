@@ -199,14 +199,14 @@ nav {
   font-family: "Montserrat";
 }
 
-.nav-item-list ul {
+.nav-item-list > ul {
   display: flex;
   justify-content: space-between;
   list-style: none;
   gap: 1rem;
   padding: 0;
 }
-.nav-item-list ul li{
+.nav-item-list> ul li{
   padding:0 5px;
 }
 
