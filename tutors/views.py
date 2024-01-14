@@ -23,7 +23,7 @@ def succes_form(request, uid):
 
     admin_html_message = render_to_string('emails/tutortoadmin.html', {'tutor': tutor})
     admin_from_email = settings.EMAIL_HOST_USER
-    admin_recipient_list = [settings.EMAIL_HOST_USER]
+    admin_recipient_list = ['john@edukom.ng', 'info@edukom.ng']
     admin_message = EmailMessage(subject, admin_html_message, admin_from_email, admin_recipient_list)
     admin_message.content_subtype = 'html'
     

@@ -25,9 +25,6 @@
             text-align: center;
             padding: 20px;
         }
-        h1, h3 {
-            color: #ffffff;
-        }
         .content {
             padding: 20px;
             color: #555555;
@@ -54,7 +51,9 @@
 
     <div class="container">
         <div class="content">
-            <h1>Title: {{data.name | title}}</h1>
+            <h3>From Contact Page</h3>
+            <br>
+            <p>Name: {{data.name | title}}</p>
             <p>Phone: {{data.phone_number}}</p>
             <p>Email: {{data.email}}</p>
             <p>Message: {{data.message}}</p>
