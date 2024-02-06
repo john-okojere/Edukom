@@ -4,20 +4,18 @@ from django.utils import timezone
 
 cc= (
     ('Pre-nursery','Pre-nursery'),
-    ('Nursery 1','Nursery 1'),
-    ('Nursery 2','Nursery 2'),
-    ('Primary 1','Primary 1'),
-    ('Primary 1','Primary 1'),
-    ('Primary 2','Primary 2'),
-    ('Primary 3','Primary 3'),
-    ('Primary 4','Primary 4'),
-    ('Primary 5','Primary 5'),
-    ('JSS 1','JSS 1'),
-    ('JSS 2','JSS 2'),
-    ('JSS 3','JSS 3'),
-    ('SSS 1','SSS 1'),
-    ('SSS 2','SSS 2'),
-    ('SSS 3','SSS 3'),
+    ('year 1','year 1'),
+    ('year 2','year 2'),
+    ('year 3','year 3'),
+    ('year 4','year 4'),
+    ('year 5','year 5'),
+    ('year 6','year 6'),
+    ('year 7','year 7'),
+    ('year 8','year 8'),
+    ('year 9','year 9'),
+    ('year 10','year 10'),
+    ('year 11','year 11'),
+    ('WAEC/GCSE CLASS','WAEC/GCSE CLASS'),
 )
 lesson_choices = (
     ('Physical lessons', 'Physical lessons'),
@@ -25,7 +23,7 @@ lesson_choices = (
 )
 
 goals = (
-    ('Improve phonics, reading and writing', 'improve phonics, reading and writing'),
+    ('Improve phonics, reading and writing', 'Improve phonics, reading and writing'),
     ('Help with assignments and school work', 'Help with assignments and school work'),
     ('Bulid foundation and confidence','Bulid foundation and confidence'),
     ('Home schooling','Home schooling'),
