@@ -3,7 +3,7 @@ import uuid
 from django.utils import timezone
 
 cc= (
-    ('Pre-nursery','Pre-nursery'),
+    ('Reception Class','Reception Class'),
     ('year 1','year 1'),
     ('year 2','year 2'),
     ('year 3','year 3'),
